@@ -1,12 +1,19 @@
 # AutoAttack
 
-An [AutoHotKey](http://autohotkey.com/) script that lets you hold down ``spacebar`` to make repeated mouse clicks.
+A script that lets you hold down ``spacebar`` to simulate repeated mouse clicks.
 
-This script is great for ARPG games that are very clicky, such as Diablo and Torchlight, saving you from developing carpal tunnel syndrome.  When the script is running you can toggle it on / off by hitting the ``capslock`` key.
+This script is great for ARPG games that are very clicky, such as Diablo and Torchlight, saving you from developing carpal tunnel syndrome.
 
-## Usage
+## For PC
 
 - Install [AutoHotKey](http://autohotkey.com/).
-- Download this script.
+- Download the ``AHK`` script.
 - Right click and "Run As Administrator".
 - Hit ``capslock`` to toggle the script on/off.
+
+## For Mac
+
+- Install [Keyboard Maestro](https://www.keyboardmaestro.com/main/).
+- Download the ``KMMacros`` script.
+- Import to your Keyboard Maestro application.
+- Hit ``control-d`` to toggle the script on/off.
