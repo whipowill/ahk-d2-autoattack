@@ -2,11 +2,11 @@
 
 A script that lets you hold down ``spacebar`` to simulate repeated mouse clicks.
 
-Designed for ARPG games that are very clicky, specifically Diablo II, saving you from developing carpal tunnel syndrome.
+I wrote this for playing ARPG games that are very clicky, saving me from developing carpal tunnel syndrome.  I'm currently using this to play Diablo II Resurrected, but it requires that I type the ``/nopickup`` command to avoid picking up all the items on the ground.
 
 ## For PC
 
-This is really great.  The advanced version is what I use on Diablo II Resurrected.
+This is really great.
 
 ### Original
 
