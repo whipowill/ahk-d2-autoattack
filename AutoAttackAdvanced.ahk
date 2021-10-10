@@ -28,19 +28,19 @@ CapsLock::
     {
         if (!is_active)
         {
-            SplashTextOn, , , Keyboard macros are OFF.
+            SetTimer, MoveTimer, Off
+
+            SplashTextOn, , , Autoattack is OFF.
             Sleep, 1000
             SplashTextOff
-
-            SetTimer, MoveTimer, Off
         }
         else
         {
-            SplashTextOn, , , Keyboard macros are ON.
+            SetTimer, MoveTimer, 100
+
+            SplashTextOn, , , Autoattack is ON.
             Sleep, 1000
             SplashTextOff
-
-            SetTimer, MoveTimer, 50
         }
     }
 return
@@ -54,9 +54,13 @@ Enter::
         if (is_active)
         {
             SetTimer, MoveTimer, Off
-
-            is_active := !is_active
         }
+        else
+        {
+            SetTimer, MoveTimer, 100
+        }
+
+        is_active := !is_active
     }
 
     Send {Enter}
