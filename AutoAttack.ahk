@@ -60,10 +60,14 @@ Return
 ; Hold SPACEBAR to make repeated mouse clicks.
 ; -------------------------------------------------
 MoveTimer:
-    state := GetKeyState("Space", "P")
-    If (state)
+    If (WinActive("Diablo II"))
     {
-        Click
+        state := GetKeyState("Space", "P")
+        If (state)
+        {
+            SetMouseDelay -1
+            Click
+        }
     }
 Return
 
@@ -88,14 +92,17 @@ PgDn::
 Return
 
 ~RButton::
-    if (is_whirlwind)
+    If (WinActive("Diablo II"))
     {
-        While GetKeyState("RButton", "P")
+        If (is_whirlwind)
         {
-            Send {Alt down}
-            Sleep 100
+            While GetKeyState("RButton", "P")
+            {
+                Send {Alt down}
+                Sleep 100
+            }
+            send {Alt up}
         }
-        send {Alt up}
     }
 return
 
@@ -103,3 +110,9 @@ return
 ; Make ALT also press CONTROL (easy stash swap).
 ; -------------------------------------------------
 ~Alt::Control
+
+; -------------------------------------------------
+; Make ALT also press CONTROL (easy stash swap).
+; -------------------------------------------------
+XButton2::Send, {Enter} leader Judah {Enter}
+XButton1::Send, {Enter} move{Enter}
