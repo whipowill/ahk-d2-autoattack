@@ -110,9 +110,3 @@ return
 ; Make ALT also press CONTROL (easy stash swap).
 ; -------------------------------------------------
 ~Alt::Control
-
-; -------------------------------------------------
-; Make ALT also press CONTROL (easy stash swap).
-; -------------------------------------------------
-XButton2::Send, {Enter} leader Judah {Enter}
-XButton1::Send, {Enter} move{Enter}
